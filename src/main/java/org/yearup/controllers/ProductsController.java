@@ -63,7 +63,7 @@ public class ProductsController
 
     @PostMapping()
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    public Product addProduct(@RequestBody Product product)
+    public Product  addProduct(@RequestBody Product product)
     {
         try
         {
