@@ -72,7 +72,7 @@ public class CategoriesController
 
     @RequestMapping(method = RequestMethod.POST)
 
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
 
 
     public Category addCategory(@RequestBody Category category)
@@ -85,7 +85,7 @@ public class CategoriesController
     // add annotation to ensure that only an ADMIN can call this function
     @RequestMapping(path = "/{id}", method = RequestMethod.PUT)
 
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
 
     public void updateCategory(@PathVariable int id, @RequestBody Category category)
     {
@@ -98,7 +98,7 @@ public class CategoriesController
     // add annotation to ensure that only an ADMIN can call this function
     @RequestMapping(path = "/{id}", method = RequestMethod.DELETE )
 
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
 
     public void deleteCategory(@PathVariable int id)
     {
