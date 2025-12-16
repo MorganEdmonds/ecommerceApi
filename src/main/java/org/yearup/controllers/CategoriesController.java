@@ -1,8 +1,10 @@
 package org.yearup.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 import org.yearup.data.CategoryDao;
 import org.yearup.data.ProductDao;
 import org.yearup.data.mysql.MySqlCategoryDao;
@@ -17,8 +19,8 @@ import java.util.List;
     // http://localhost:8080/categories
 // add annotation to allow cross site origin requests
 
-@RestController("/categories") // handles HTTP requests, handles server - client communication and acts as an Endpoint for URL.
-@RequestMapping // maps HTTP requests to controller methods.
+@RestController // handles HTTP requests, handles server - client communication and acts as an Endpoint for URL.
+@RequestMapping("/categories") // maps HTTP requests to controller methods.
 @CrossOrigin // handles cross-origin requests
 
 public class CategoriesController
@@ -52,7 +54,15 @@ public class CategoriesController
     {
         // get the category by id
 
-        return categoryDao.getById(id);
+        Category category = categoryDao.getById(id);
+
+        if (category == null) {
+            throw new ResponseStatusException((HttpStatus.NOT_FOUND));
+
+        }
+        return category;
+
+        //if null throw 404
     }
 
     // the url to return all products in category 1 would look like this
@@ -74,6 +84,7 @@ public class CategoriesController
 
     @PreAuthorize("hasRole('ROLE_ADMIN')")
 
+            @ResponseStatus(HttpStatus.CREATED)
 
     public Category addCategory(@RequestBody Category category)
     {
@@ -100,10 +111,15 @@ public class CategoriesController
 
     @PreAuthorize("hasRole('ROLE_ADMIN')")
 
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+
+
+
     public void deleteCategory(@PathVariable int id)
     {
         // delete the category by id
 
         categoryDao.delete(id);
+
     }
 }
