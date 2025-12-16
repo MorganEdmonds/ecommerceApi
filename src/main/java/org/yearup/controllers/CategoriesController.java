@@ -17,7 +17,7 @@ import java.util.List;
     // http://localhost:8080/categories
 // add annotation to allow cross site origin requests
 
-@RestController // handles HTTP requests, handles server - client communication and acts as an Endpoint for URL.
+@RestController("/categories") // handles HTTP requests, handles server - client communication and acts as an Endpoint for URL.
 @RequestMapping // maps HTTP requests to controller methods.
 @CrossOrigin // handles cross-origin requests
 
