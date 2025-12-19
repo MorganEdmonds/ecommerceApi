@@ -22,9 +22,11 @@ For the second bug, I fixed an issue when an admin went to update a product, the
 ## Screen shots:
 
 Here is a screen shot of my first few tests in insomnia not working: 
+
 <img width="1896" height="1094" alt="Screenshot (55)" src="https://github.com/user-attachments/assets/824c9b19-439b-4136-a6f7-701ff4fb7179" />
 
 Now here is a sreenshot of all of my tests running correctly in insomnia: 
+
 <img width="1886" height="994" alt="Screenshot (58)" src="https://github.com/user-attachments/assets/5388bcea-d157-443c-af31-c18f2dcac9de" />
 
 Below are a few more screenshots of my ecommerceWEB part of  my capstone working:
