@@ -29,16 +29,21 @@ Now here is a sreenshot of all of my tests running correctly in insomnia:
 
 Below are a few more screenshots of my ecommerceWEB part of  my capstone working:
 
-<img width="1920" height="1200" alt="Screenshot (62)" src="https://github.com/user-attachments/assets/1846fc51-d1b2-413b-ac53-56ece3765258" />
+All products
+
+<img width="1907" height="983" alt="Screenshot (63)" src="https://github.com/user-attachments/assets/87feab0c-57ee-473c-96bb-6a90b848c340" />
+
+All pantry staples:
+
+<img width="1913" height="1005" alt="Screenshot (62)" src="https://github.com/user-attachments/assets/49c56340-2382-4085-9d29-a0ed082cc05e" />
+
+All dairy products:
+
+<img width="1920" height="979" alt="Screenshot (60)" src="https://github.com/user-attachments/assets/c242966f-8724-4702-9c02-b25f8cf8154d" />
 
 
-<img width="1920" height="1200" alt="Screenshot (61)" src="https://github.com/user-attachments/assets/6a44f84b-3f33-45ab-a093-c4c2d711866e" />
 
 
-<img width="1920" height="1200" alt="Screenshot (59)" src="https://github.com/user-attachments/assets/d6add90b-cd82-4a74-a7e8-e2a7f751e6c3" />
-
-
-<img width="1920" height="1200" alt="Screenshot (60)" src="https://github.com/user-attachments/assets/b2c2d978-c58a-4572-aa21-8bff2b16081b" />
 
 
 ### Resources used:
