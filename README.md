@@ -8,10 +8,15 @@ During phase 1, I was tasked to impliment the logic for the prebuilt category co
 I had to:
 
 -Get all categories
+
 -Get category by ID
+
 -Get all products from a specific category
+
 -Post create new category for admin access only
+
 -Put update exsisting category for admin access only
+
 -Delete remove category for admin access only
 
 ### Phase 2:
