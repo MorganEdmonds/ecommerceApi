@@ -5,7 +5,7 @@ MySQL database for data storage.
 ### Phase 1: 
 
 During phase 1, I was tasked to impliment the logic for the prebuilt category controller class as well as to add annotations to the controller.
-I had to:
+I had to: 
 
 -Get all categories
 
@@ -21,7 +21,7 @@ I had to:
 
 ### Phase 2:
 
-During phase 2 I was tasked with fixing 2 bug in the code thta was provided to us. For the first bug, I had to fix incorrect product search results when filtering the by price range, the SQL query had the max price missing causing some problems with the filtering.
+During phase 2 I was tasked with fixing 2 bug in the code that was provided to us. For the first bug, I had to fix incorrect product search results when filtering the by price range, the SQL query had the max price missing causing some problems with the filtering.
 For the second bug, I fixed an issue when an admin went to update a product, the product would be created added over again instead of being updated.
 
 ## Screen shots:
